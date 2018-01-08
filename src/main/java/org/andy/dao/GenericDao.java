@@ -13,4 +13,13 @@ public interface GenericDao<T,PK extends Serializable> {
 	  
 	 PK save(T entity);
  
+	 PK delete(PK id);
+	 
+	 int updateById(T entity);
+	 
+	 //批量更新
+	 int[] batchSave(List<T> users);
+	 
+	 //批量删除
+	 int[] batchDelete(List<PK> id);
 }
