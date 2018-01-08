@@ -19,6 +19,22 @@
  姓名： ${userInfo.name} 
  密码： ${userInfo.password} 
  创建时间： ${userInfo.create_time} 
+ 
+ <form action="save" method="post">
+ <label>添加用户</label>
+ 	<table>
+ 		<tr>
+ 			<td>
+ 				姓名：<input type="text" class="username"/>
+ 				密码：<input type="text" class="password"/>
+ 				<input type="submit" value="提交"/>
+ 				
+ 			</td>
+ 		
+ 		</tr>
+ 	</table>
+ </form>
+ 
     <br/>  
     ajax显示全部用户信息：  
     <div id="show_all_user"></div> 
