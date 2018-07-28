@@ -9,7 +9,7 @@
 
 	<!--引入配置属性文件 -->
 	<context:property-placeholder location="classpath*:/applicationConfig.properties" />
-	<!--扫描org.andy.work下文件，自动注入dao,entity,service为bean -->
+	<!--扫描org.andy下文件，自动注入dao,entity,service为bean -->
 	<context:component-scan base-package="org.andy" />
 
 	<!-- c3p0数据源配置 -->

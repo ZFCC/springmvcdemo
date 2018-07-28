@@ -29,7 +29,7 @@ public class TestUserInfoService {
         //���Բ�ѯ��Ӧ���û�  
         UserInfo userInfo = userInfoService.getById(2);  
         LOGGER.info(JSON.toJSONStringWithDateFormat(userInfo,  
-                "yyyy-MM-dd HH:mm:ss"));  
+                "yyyy-MM-dd HH:mm:ss"));  //年后怎么回事啊啊啊啊
     }  
   
     @Test  
@@ -66,7 +66,7 @@ public class TestUserInfoService {
     public void testBeachSave(){
     	
     	List<UserInfo> list = new ArrayList<UserInfo>();
-    	for(int i=0; i<5 ; i++){
+    	for(int i=0; i<50 ; i++){
 	    	UserInfo user = new UserInfo();
 	    	user.setName("小明"+i);
 	    	user.setPassword("123123"+i);

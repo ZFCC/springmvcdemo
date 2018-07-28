@@ -3,13 +3,13 @@
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
-	
+	<!--扫描配置文件-->
   <display-name>Archetype Created Web Application</display-name>
   <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:/springmvc-applicationContext.xml</param-value>
 	</context-param>
-
+<!--设置编码方式为utf-8-->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
